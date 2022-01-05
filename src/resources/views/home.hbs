@@ -1,1 +1,21 @@
-<h1>Home page</h1>
+
+    <div class="row">
+        {{#each courses}}
+        <div class="card col-md-3" style="margin-top: 16px; margin-right: 16px;">
+            <a href="/news/{{this.slug}}">
+            <img class="card-img-top" src="{{ this.image }}" alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <a href="/news/{{this.slug}}">
+                <h5 class="card-title">{{ this.name }}</h5>
+                </a>
+                <p class="card-text">{{ this.description }}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            </div>
+        {{/each }}
+
+    </div>
+
+
+

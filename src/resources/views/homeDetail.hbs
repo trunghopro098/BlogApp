@@ -1,0 +1,22 @@
+
+<div class="container">
+    <div class="row">
+        
+        <div class="card col-md-12" style="margin-top: 16px; margin-right: 16px; ">
+
+            {{!-- <img class="card-img-top" src="{{ courses.image }}" alt="Card image cap"> --}}
+             <iframe class="card-img-top" width="1280" height="720" src="https://www.youtube.com/embed/{{courses.videoId}}"+ title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+            <div class="card-body">
+              
+                <h5 class="card-title">{{ courses.name }}</h5>
+                
+                <p class="card-text">{{ courses.description }}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            </div>
+    
+
+    </div>
+
+
+</div>
